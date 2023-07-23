@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fron-end starter kit</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.avif" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Company</h1>
+      <ul>
+        <li class="submenu">
+          <a href="#">ABOUT</a>
+          <ul class="dropdown">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Vision Mission</a></li>
+          </ul>
+        </li>
+        <li><a href="#">OUR WORK</a></li>
+        <li><a href="#">OUR WORK</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="slider">
+        <div>
+          <img src="assets/image1.jpg" alt="Image 1" />
+          <div class="caption">
+            This Is a place where technology & <br />
+            creativity fused into digital chemistry
+          </div>
+        </div>
+        <div>
+          <img src="assets/image2.jpg" alt="Image 1" />
+          <div class="caption">
+            we don't have the best but we have the <br />
+            greatest team
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>OUR VALUES</h2>
+      <div class="values">
+        <div class="value1">
+          <img src="assets/lightbulb-o.png" alt="Image 1" />
+          <h3>innovative</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nisi
+            eligendi quaerat quisquam autem voluptatibus. Aspernatur, vel.
+            Explicabo velit porro voluptate. Ex assumenda officiis sit eius
+            soluta eos non itaque.
+          </p>
+        </div>
+        <div class="value2">
+          <img src="assets/bank.png" alt="Image 2" />
+          <h3>loyalty</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nisi
+            eligendi quaerat quisquam autem voluptatibus. Aspernatur, vel.
+            Explicabo velit porro voluptate. Ex assumenda officiis sit eius
+            soluta eos non itaque.
+          </p>
+        </div>
+        <div class="value3">
+          <img src="assets/balance-scale.png" alt="Image 3" />
+          <h3>respect</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nisi
+            eligendi quaerat quisquam autem voluptatibus. Aspernatur, vel.
+            Explicabo velit porro voluptate. Ex assumenda officiis sit eius
+            soluta eos non itaque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright © 2016. PT Company</p>
+        <img src="assets/facebook-official.png" alt="Image 3" />
+        <img src="assets/twitter.png" alt="Image 3" />
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider();
+      });
+    </script>
+  </body>
+</html>

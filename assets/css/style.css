@@ -1,0 +1,223 @@
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  cursor: pointer;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  padding: 6px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #333;
+  transition: 0.4s;
+}
+
+.submenu {
+  z-index: 1;
+}
+
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.dropdown li {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.dropdown li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Image SLide */
+
+.slider img {
+  z-index: -999;
+  width: 100%;
+}
+
+/* Caption */
+.slider {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  width: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Gaya CSS untuk mengatur tampilan caption pada hover */
+.caption:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+section h2 {
+  text-align: center;
+}
+
+section h3 {
+  text-transform: uppercase;
+}
+
+section img {
+  width: 20px;
+}
+
+.values {
+  display: flex;
+  justify-content: center;
+}
+
+.value1 {
+  border: solid 5px rgb(203, 93, 93);
+  background-color: rgb(236, 100, 100);
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.value1 img {
+  width: 15px;
+}
+
+.value2 {
+  border: solid 5px rgb(71, 212, 71);
+  background-color: rgb(102, 190, 102);
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.value3 {
+  border: solid 5px rgb(107, 155, 231);
+  background-color: rgb(107, 134, 208);
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+/* Styling for the contact form */
+#contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+#contact-form h2 {
+  margin-bottom: 10px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#contact-form button {
+  width: 100%;
+  background-color: rgb(53, 111, 150);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* footer */
+
+footer {
+  background-color: #333;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer img {
+  width: 20px;
+  margin-right: 4px;
+}
+
+/* Media query untuk tampilan responsif */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 30px;
+  }
+
+  nav ul li {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  .caption {
+    font-size: 15px;
+  }
+
+  .values {
+    flex-wrap: wrap;
+  }
+
+  .value1,
+  .value2,
+  .value3 {
+    width: 100%;
+  }
+
+  #contact-form {
+    max-width: 80%;
+  }
+}
