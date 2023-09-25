@@ -114,6 +114,7 @@ section img {
   padding: 20px;
   margin: 20px;
   text-align: center;
+  border-radius: 20px;
 }
 
 .value1 img {
@@ -128,6 +129,7 @@ section img {
   padding: 20px;
   margin: 20px;
   text-align: center;
+  border-radius: 20px;
 }
 
 .value3 {
@@ -138,6 +140,7 @@ section img {
   padding: 20px;
   margin: 20px;
   text-align: center;
+  border-radius: 20px;
 }
 /* Styling for the contact form */
 #contact-form {
